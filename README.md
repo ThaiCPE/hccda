@@ -11,12 +11,12 @@ Tasks:
 - Run web server on ECS (install httpd and start httpd service)
 - Configure Load balancer health check with backend servers (ECSs)
 - Open port by remote to ECS:
--- Edit add listerner in httpd.conf
--- Using vi commnad
--- 1.1 vi /etc/httpd/conf/httpd.conf
--- 1.2 press i
--- 1.3 add "Listener 8889" after Listener 80
--- 1.4 press Esc
--- 1.5 type ":wq" to save and exit vi
--- 1.6 systemctl reload httpd
--- 1.6 systemctl restart httpd
+ - Edit add listerner in httpd.conf
+ - Using vi commnad
+ - 1.1 vi /etc/httpd/conf/httpd.conf
+ - 1.2 press i
+ - 1.3 add "Listener 8889" after Listener 80
+ - 1.4 press Esc
+ - 1.5 type ":wq" to save and exit vi
+ - 1.6 systemctl reload httpd
+ - 1.6 systemctl restart httpd
